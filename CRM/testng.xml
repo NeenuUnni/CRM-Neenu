@@ -4,10 +4,10 @@
 	<listeners> <listener class-name="generaltests.Listener"/> </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Test.InvoiceTest"/>
+	<class name="Test.LoginTest"/>
       <class name="Test.NoteTest"/>
       <class name="Test.ProjectTest"/>
-      <class name="Test.LoginTest"/>
+      <class name="Test.InvoiceTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-29T21:42:55 IST" name="Default suite" finished-at="2023-12-29T21:43:05 IST" duration-ms="10089">
+    <groups>
+      <group name="regression">
+        <method signature="NoteTest.verifynote()[pri:1, instance:Test.NoteTest@13fd2ccd]" name="verifynote" class="Test.NoteTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="NoteTest.verifynote()[pri:1, instance:Test.NoteTest@13fd2ccd]" name="verifynote" class="Test.NoteTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-12-29T21:42:55 IST" name="Default test" finished-at="2023-12-29T21:43:05 IST" duration-ms="10089">
+      <class name="Test.NoteTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:Test.NoteTest@13fd2ccd]" started-at="2023-12-29T21:42:55 IST" name="beforeMethod" finished-at="2023-12-29T21:43:00 IST" duration-ms="5651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifynote()[pri:1, instance:Test.NoteTest@13fd2ccd]" started-at="2023-12-29T21:43:00 IST" name="verifynote" finished-at="2023-12-29T21:43:05 IST" duration-ms="4359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifynote -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:Test.NoteTest@13fd2ccd]" started-at="2023-12-29T21:43:05 IST" name="takeScreenShotOnFailure" finished-at="2023-12-29T21:43:05 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifynote status=SUCCESS method=NoteTest.verifynote()[pri:1, instance:Test.NoteTest@13fd2ccd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- Test.NoteTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
