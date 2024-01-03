@@ -9,6 +9,7 @@ public class FakerUtility {
 		return faker.name().firstName();
 	}
 
+	
 	public static String state() {
 		Faker faker = new Faker();
 		return faker.address().state();
