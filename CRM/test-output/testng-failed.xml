@@ -5,9 +5,9 @@
     <classes>
       <class name="Test.InvoiceTest">
         <methods>
-          <include name="verifydeleteinvoice"/>
           <include name="beforeMethod"/>
           <include name="takeScreenShotOnFailure"/>
+          <include name="verifyinvoice"/>
         </methods>
       </class> <!-- Test.InvoiceTest -->
     </classes>
