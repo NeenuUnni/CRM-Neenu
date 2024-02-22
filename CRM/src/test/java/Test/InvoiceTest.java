@@ -16,15 +16,13 @@ public class InvoiceTest extends BaseTest
 {
 	String generatedinvoice;
 	@Test(priority=1)
-	public void verifyinvoice() throws InvalidFormatException, IOException 
+	public void verifyinvoice()
 	{
 		LoginPage lp = new LoginPage(driver);
 		lp.doLogin("admin@admin.com", "12345678");
 		InvoicePage ip=new InvoicePage(driver);
 		ip.clickInvoice();
-		String value=ExcelRead.getDataFromExcel(Constants.excel_test,"Sheet2", 1, 0);
-		System.out.println(value);
-		generatedinvoice=ip.addInvoice("2023-02-22", "2024-02-29", value,"Neenu");
+		generatedinvoice=ip.addInvoice("2024-02-22", "2024-02-29","Neenu");
 		ip.clickInvoice();
 		String actualinvoice=ip.search(generatedinvoice);
 		Assert.assertEquals(actualinvoice, generatedinvoice);

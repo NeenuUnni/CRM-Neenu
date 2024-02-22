@@ -70,14 +70,13 @@ public class InvoicePage {
 		elementutil=new ElementUtility(driver);
 	}
 
-	public String addInvoice(String bill,String due,String client, String note)
+	public String addInvoice(String bill,String due, String note)
 	{
 		waitUtil.waitForClick(addinvoice);
 		addinvoice.click();
 		elementutil.dateSelect(billdate,bill);
 		elementutil.dateSelect(duedate, due);
 		clientclick.click();
-		clientField.sendKeys(client);
 		waitUtil.waitForClick(clientField);
 		select.click();
 		elementutil.scroll(billdate);
