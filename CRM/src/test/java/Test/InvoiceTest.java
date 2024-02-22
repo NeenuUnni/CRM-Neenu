@@ -24,7 +24,7 @@ public class InvoiceTest extends BaseTest
 		ip.clickInvoice();
 		String value=ExcelRead.getDataFromExcel(Constants.excel_test,"Sheet2", 1, 0);
 		System.out.println(value);
-		generatedinvoice=ip.addInvoice("2023-02-22", "2024-03-24", value,"Neenu");
+		generatedinvoice=ip.addInvoice("2023-02-22", "2024-02-29", value,"Neenu");
 		ip.clickInvoice();
 		String actualinvoice=ip.search(generatedinvoice);
 		Assert.assertEquals(actualinvoice, generatedinvoice);
